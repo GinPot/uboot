@@ -680,7 +680,23 @@ static void mctl_auto_detect_dram_size(uint16_t socid, struct dram_para *para)
 	   0,  0,  0,  0,  3,  3,  3,  3,			\
 	   3,  3,  3,  3,  3,  3,  3,  3,			\
 	   3,  3,  3,  3,  2,  0,  0      }
-
+/*
+#define SUN8I_H5_DX_READ_DELAYS				\
+	{{  11,  11,  11,  11,  11,  11,  11,  11,  0,  0,  0 },	\
+	 {  12,  11,  9,  9,  8,  9,  8,  9,  10,  0,  0 },	\
+	 {  11,  11,  11,  11,  11,  11,  11,  11,  0,  0,  0 },	\
+	 {  11,  11,  11,  11,  11,  11,  11,  11,  0,  0,  0  } }
+#define SUN8I_H5_DX_WRITE_DELAYS				\
+	{{  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 },	\
+	 {  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 },	\
+	 {  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 },	\
+	 {  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0 } }
+#define SUN8I_H5_AC_DELAYS					\
+	{  0,  0,  0,  0,  0,  0,  0,  0,			\
+	   0,  0,  0,  0,  0,  0,  0,  0,			\
+	   0,  0,  0,  0,  0,  0,  0,  0,			\
+	   0,  0,  0,  0,  0,  0,  0      }
+*/
 unsigned long sunxi_dram_init(void)
 {
 	struct sunxi_mctl_com_reg * const mctl_com =
